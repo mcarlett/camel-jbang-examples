@@ -10,7 +10,6 @@
       steps:
         - log:
             id: log-record
-            loggingLevel: DEBUG
             message: "Processing record: ${body}"
         - setVariable:
             jq:
