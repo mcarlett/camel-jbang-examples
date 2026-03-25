@@ -88,7 +88,7 @@
                             parameters:
                               operation: PUTIFABSENT
                       jq:
-                        expression: (.severityText // "" | ascii_downcase) == "error" or .status == "2"
+                        expression: .severityText == "ERROR" or .severityText == "error" or .status == "2"
 - route:
     id: route-expired-events
     from:
